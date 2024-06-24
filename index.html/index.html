@@ -1,0 +1,223 @@
+<!DOCTY\PE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SKY TRAVEL AGENCY</title>
+    <link rel="icon" href="images/air logo.jpg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://kit.fontawesome.com/69651d44d1.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section id="Home" class="header">
+      <header class="nav">
+	      <a class="logo" href="#Home">SKY TRAVEL AGENCY</a>
+	      <ul>
+          <li><a href="#AIRLINES">AIRLINES</a></li>
+          <li><a href="#PURCHASE">PURCHASE</a></li>
+          <li><a href="#CONTACT">CONTACT</a></li>
+        </ul>
+      </header>
+      <div class="welcome">
+        <h6><i>SKY TRAVEL AGENCY</i></h6>
+        <h5>FLY WITH EASE</h5>
+	<h1>FLIGHT BOOKINGS AND TICKETS</h1>
+        <a class="PURCHASE" href="#PURCHASE">PURCHASE AND BOOKINGS</a>
+      </div>
+    </section>
+
+    <main>
+      <section id="AIRLINES">
+        <h2>AIR CANADA</h2>
+        <div class="wrapper">
+          <div class="works">
+            <img src="./images/air canada.jpg" alt="Air canada image" />
+            <p>AIR CANADA</p>
+          </div>
+          <div class="works">
+            <img src="./images/british.jpg" alt="British Airways" />
+            <p>BRITISH AIRWAYS</p>
+          </div>
+          <div class="works">
+            <img src="./images/delta.jpg" alt="Delta Airways" />
+            <p>DELTA</p>
+          </div>
+          <div class="works">
+            <img src="./images/emirate.jpg" alt="Emirate Airways" />
+            <p>EMIRATES</p>
+          </div>
+          <div class="works">
+            <img src="./images/etihad.jpg" alt="Etihad Airways" />
+            <p>ETIHAD AIRWAYS</p>
+	    </div>
+          <div class="works">
+            <img src="./images/qatar.jpg" alt="Qatar Airline" />
+            <p>QATAR AIRWAYS</p>
+	  </div>
+	  <div class="works">
+		  <img src="./images/turkish.jpg" alt="Turkish Airways" />
+		  <p>TURKISH AIRWAYS</P>
+	  </div>
+	  <div class="work">
+		  <img src="./images/malaysia.jpg" alt="Malaysia Airways" />
+		  <p>MALAYSIA AIRLINES</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="Purchase">
+        <h3>BUY TICKETS WITH BOOKINGS</h3>
+        <div class="Buy Now">
+          <p>Select Airline</p>
+          <select class="form-select form-select-sm mb-3 airlines" aria-label=".form-select-lg example">
+            <option value="Air canada">Air Canada</option>
+            <option value="British airways">British Airways</option>
+            <option value="Delta airways">Delta Airways</option>
+            <option value="Emirate airways ">Emirate Airways</option>
+            <option value="Etihad airways">Etihad Airways</option>
+            <option value="Qatar airways">Qatar Airways</option>
+	    <option value="Turkish Airways">Turkish Airways</option>
+	    <option value="Malaysia airlines">Malaysia Airlines</option>
+	    </select>
+          <p>Departure:</p>
+          <select class="form-select form-select-sm mb-3 bookings" aria-label=".form-select-lg example">
+		  <option value="day">Day</option>
+		  <option value="month">Month</option>
+		  <option value="year">Year</option>
+		  <form action="https://formspree.io/f/mvoldnbp" method="post">
+	    <p>Return:</p>
+	    <select class="from-select from-selct-sm mb-3 bookings" aria-label=".from-select-lg example">
+		    <option value="Day">Day</option>
+		    <option value="Month">Month</option>
+		    <option value="year">Year</option>
+  </select>
+          <p>Round Trip</p>
+          <select class="form-select form-select-sm mb-3 trip" aria-label=".form-select-lg example">
+            <option value="$2000">one way</option>
+            <option value="$5000">multi city</option>
+	  </select>
+	  <p>Economy</p>
+	  <select class="from-select from-select-sm mb-3 economy" aria-label=".from-select-lg example">
+            <option value="Premium Economy"</option>
+            <option value="Business Class"</option>
+	    <option value="First Class"</option>
+          </select>
+          <p>Manage Bookings</p>
+          <select class="form-select form-select-sm mb-3 manage bookings" aria-label=".form-select-lg example">
+            <option value="Last Name"</option>
+            <option value="PNR Number"</option>
+          </select>
+        </div>
+        <div class="text-center">
+          <button class="btn btn-info PURCHASE" type="PROCEED">Order</button>
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col"> Listed Flight</th>
+              <th scope="col">Trip</th>
+              <th scope="col">Economy</th>
+              <th scope="col">Departure Date</th>
+	      <th scope="col">Return Date</th>
+            </tr>
+          </thead>
+          <tbody id="Ticket Purchase">
+            <tr>
+              <th scope="row">1</th>
+              <td id="Airline"></td>
+              <td id="Economy"></td>
+              <td id="Departure"></td>
+              <td id="Return"></td>
+	      <td id="Trip"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="additional-buttons">
+          <div class="text-center">
+            <button class="btn btn-info add-ticket purchase" type="submit">Add Another</button>
+            <br />
+            <div class="additional-info">
+              <h3>The total is: <span></span></h3>
+              <h6>Would you like to buy more tickets in  additional <em>250</em>?</h6>
+              <h5>Your purchase has been received! We are processing your purchase <span></span></h5>
+              <div class="location text-center">
+                <input type="text" size="30" placeholder="What country are you from?" required />
+                <button class="btn btn-info complete" type="submit">Complete</button>
+              </div>
+            </div>
+            <br />
+            <button class="btn btn-info yes" type="submit">Yes</button>
+            <button class="btn btn-info no" type="submit">No</button>
+          </div>
+          <div class="text-right">
+            <button class="btn btn-info check-out" type="submit">PROCEED</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="Contact">
+        <div class="reachUs">
+          <h2>Want to get the latest travel news and deals?
+Enter your email and we'll send them your way.</h2>
+          <form action="https://formspree.io/f/mvoldnbp" method="post">
+            <label for="name"></label>
+            <input class="name" type="text" name="name" placeholder="Name..." required />
+            <label for="email"></label>
+            <input class="email" type="email" name="email" placeholder="Email..." required /> <br />
+            <br />
+            <label for="textarea"></label>
+            <textarea name="text" id="" cols="50" rows="5" placeholder="Your message here..."></textarea><br />
+            <input class="submit" type="submit" value="Submit" />
+          </form>
+          <div class="rating-css">
+            <div class="star-icon">
+              <p>Rate our services</p>
+              <br />
+              <input type="radio" name="rating1" id="rating1" />
+              <label for="rating1" class="fa fa-star"></label>
+              <input type="radio" name="rating1" id="rating2" />
+              <label for="rating2" class="fa fa-star"></label>
+              <input type="radio" name="rating1" id="rating3" />
+              <label for="rating3" class="fa fa-star"></label>
+              <input type="radio" name="rating1" id="rating4" />
+              <label for="rating4" class="fa fa-star"></label>
+              <input type="radio" name="rating1" id="rating5" />
+              <label for="rating5" class="fa fa-star"></label>
+            </div>
+          </div>
+	  <p>We are located at:Love estate, SKY Plaza</p>
+	  <p>Los Angeles Califonia</p>
+	  <p>
+	  call: +1 803 3000 100 <br />
+	  or <br />
+	  EMAIL: Sky@Ticket.com
+	  </p>
+	  </div>
+      </section>
+
+      <footer>
+	      <p>&copy; 2024 by Sultan</p>
+	      </footer>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
